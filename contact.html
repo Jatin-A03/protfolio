@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Jatin Kumar Agrawal</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">Jatin Kumar Agrawal</a>
+      <nav class="nav-menu">
+        <a href="contact.html" class="nav-contact-btn">Contact</a>
+      </nav>
+    </div>
+    </header>
+    <section class="section section-alt">
+      <div class="container contact-card">
+        <div>
+          <h2>Reach Out</h2>
+          <p>Fill out the form and let me know what you’re working on or what you need.</p>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <input type="hidden" name="access_key" value="05a1e4fd-fd1b-4615-bb25-1a87346b8684" />
+          <input type="hidden" name="subject" value="New message from Portfolio Contact Form" />
+          <!-- Honeypot spam protection -->
+          <input type="checkbox" name="botcheck" style="display:none" />
+          <label>
+            Name
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" placeholder="Say hello or ask anything!" required></textarea>
+          </label>
+          <button type="submit" class="button primary" id="submit-btn">Send Message</button>
+          <div class="contact-feedback" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Jatin Kumar Agrawal.</p>
+    </div>
+  </footer>
+</body>
+</html>
