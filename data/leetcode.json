@@ -1,15 +1,107 @@
 {
-  "updatedAt": null,
+  "updatedAt": "2026-09-27T12:57:03.431Z",
   "username": "A_Jatin",
-  "ranking": null,
-  "rating": null,
-  "totalSolved": 0,
+  "ranking": 563145,
+  "rating": 1400.756896752448,
+  "totalSolved": 279,
   "difficulty": {
-    "easy": 0,
-    "medium": 0,
-    "hard": 0
+    "easy": 169,
+    "medium": 105,
+    "hard": 5
   },
-  "topics": [],
-  "recentAccepted": [],
+  "topics": [
+    {
+      "name": "Array",
+      "solved": 155
+    },
+    {
+      "name": "String",
+      "solved": 62
+    },
+    {
+      "name": "Math",
+      "solved": 56
+    },
+    {
+      "name": "Hash Table",
+      "solved": 53
+    },
+    {
+      "name": "Two Pointers",
+      "solved": 37
+    },
+    {
+      "name": "Sorting",
+      "solved": 34
+    },
+    {
+      "name": "Matrix",
+      "solved": 29
+    },
+    {
+      "name": "Bit Manipulation",
+      "solved": 24
+    },
+    {
+      "name": "Greedy",
+      "solved": 23
+    },
+    {
+      "name": "Simulation",
+      "solved": 22
+    }
+  ],
+  "recentAccepted": [
+    {
+      "title": "Reverse Substrings Between Each Pair of Parentheses",
+      "slug": "reverse-substrings-between-each-pair-of-parentheses",
+      "timestamp": 1790494787
+    },
+    {
+      "title": "Binary Subarrays With Sum",
+      "slug": "binary-subarrays-with-sum",
+      "timestamp": 1790489879
+    },
+    {
+      "title": "Minimum Operations to Reduce X to Zero",
+      "slug": "minimum-operations-to-reduce-x-to-zero",
+      "timestamp": 1790401671
+    },
+    {
+      "title": "Evaluate the Bracket Pairs of a String",
+      "slug": "evaluate-the-bracket-pairs-of-a-string",
+      "timestamp": 1790401459
+    },
+    {
+      "title": "Minimum Deletions to Make Character Frequencies Unique",
+      "slug": "minimum-deletions-to-make-character-frequencies-unique",
+      "timestamp": 1790399527
+    },
+    {
+      "title": "Unique Number of Occurrences",
+      "slug": "unique-number-of-occurrences",
+      "timestamp": 1790398410
+    },
+    {
+      "title": "Word Pattern",
+      "slug": "word-pattern",
+      "timestamp": 1790235719
+    },
+    {
+      "title": "Nim Game",
+      "slug": "nim-game",
+      "timestamp": 1790234257
+    },
+    {
+      "title": "Smallest Index With Digit Sum Equal to Index",
+      "slug": "smallest-index-with-digit-sum-equal-to-index",
+      "timestamp": 1790233107
+    },
+    {
+      "title": "Find X Value of Array I",
+      "slug": "find-x-value-of-array-i",
+      "timestamp": 1790011465
+    }
+  ],
   "profileUrl": "https://leetcode.com/u/A_Jatin/"
 }
