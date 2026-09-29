@@ -15,12 +15,11 @@ const query = `
       }
     }
     userContestRanking(username: $username) {
+      attendedContestsCount
       rating
     }
-    recentAcSubmissionList(username: $username, limit: 10) {
-      title
-      titleSlug
-      timestamp
+    userContestRankingHistory(username: $username) {
+      rating
     }
   }
 `;
@@ -50,6 +49,13 @@ if (!profile) {
 
 const submissions = profile.submitStats?.acSubmissionNum ?? [];
 const solvedCount = (difficulty) => submissions.find((entry) => entry.difficulty === difficulty)?.count ?? 0;
+const contestRanking = payload.data?.userContestRanking;
+const ratings = (payload.data?.userContestRankingHistory ?? [])
+  .map((contest) => Number(contest.rating))
+  .filter(Number.isFinite);
+const currentRating = Number(contestRanking?.rating);
+if (Number.isFinite(currentRating)) ratings.push(currentRating);
+const highestRating = ratings.length ? Math.max(...ratings) : null;
 const topics = Object.values(profile.tagProblemCounts ?? {})
   .flat()
   .filter((topic) => topic.problemsSolved > 0)
@@ -61,7 +67,8 @@ const stats = {
   updatedAt: new Date().toISOString(),
   username: profile.username,
   ranking: profile.profile?.ranking ?? null,
-  rating: payload.data.userContestRanking?.rating ?? null,
+  contestsGiven: contestRanking?.attendedContestsCount ?? 0,
+  highestRating,
   totalSolved: solvedCount('All'),
   difficulty: {
     easy: solvedCount('Easy'),
@@ -69,11 +76,6 @@ const stats = {
     hard: solvedCount('Hard'),
   },
   topics,
-  recentAccepted: (payload.data.recentAcSubmissionList ?? []).map(({ title, titleSlug, timestamp }) => ({
-    title,
-    slug: titleSlug,
-    timestamp: Number(timestamp),
-  })),
   profileUrl: `https://leetcode.com/u/${encodeURIComponent(profile.username)}/`,
 };
 

@@ -253,17 +253,16 @@
 
         <article class="achievement-card">
           <div class="achievement-icon">🏆</div>
-          <h3>Contest Rating</h3>
-          <p class="achievement-stat" id="leetcode-rating">—</p>
-          <p class="achievement-desc" id="leetcode-ranking">Global ranking unavailable</p>
+          <h3>Contests Given</h3>
+          <p class="achievement-stat" id="leetcode-contests">—</p>
+          <p class="achievement-desc">LeetCode contests attended</p>
         </article>
 
         <article class="achievement-card">
-          <div class="achievement-icon">⚡</div>
-          <h3>Recent Accepted</h3>
-          <ul class="leetcode-recent" id="leetcode-recent" aria-live="polite">
-            <li>Stats will appear after the first update.</li>
-          </ul>
+          <div class="achievement-icon">📈</div>
+          <h3>Highest Rating</h3>
+          <p class="achievement-stat" id="leetcode-rating">—</p>
+          <p class="achievement-desc" id="leetcode-ranking">Global ranking unavailable</p>
         </article>
       </div>
       <div class="leetcode-topics-wrap">
@@ -273,6 +272,43 @@
         </ul>
       </div>
       <p class="leetcode-updated" id="leetcode-updated" aria-live="polite"></p>
+
+      <div class="codeforces-panel">
+        <div class="section-label">Codeforces</div>
+        <h3 class="platform-heading">Competitive programming profile</h3>
+        <div class="achievement-grid codeforces-grid">
+          <article class="achievement-card">
+            <div class="achievement-icon">🏅</div>
+            <h3>Current Rating</h3>
+            <p class="achievement-stat" id="codeforces-rating">—</p>
+            <p class="achievement-desc" id="codeforces-rank">Rank unavailable</p>
+          </article>
+          <article class="achievement-card">
+            <div class="achievement-icon">🧩</div>
+            <h3>Problems Solved</h3>
+            <p class="achievement-stat" id="codeforces-solved">—</p>
+            <p class="achievement-desc" id="codeforces-submissions">Accepted submissions unavailable</p>
+          </article>
+          <article class="achievement-card">
+            <div class="achievement-icon">🏆</div>
+            <h3>Contests Given</h3>
+            <p class="achievement-stat" id="codeforces-contests">—</p>
+            <p class="achievement-desc" id="codeforces-best-rank">Best rank unavailable</p>
+          </article>
+        </div>
+        <div class="codeforces-details">
+          <div>
+            <h4>Performance</h4>
+            <p id="codeforces-performance">Loading Codeforces performance...</p>
+          </div>
+          <div>
+            <h4>Top Tags</h4>
+            <ul class="codeforces-list" id="codeforces-tags"><li>Loading...</li></ul>
+          </div>
+        </div>
+        <a class="profile-link" id="codeforces-profile" href="https://codeforces.com/profile/A_Jatin" target="_blank" rel="noopener noreferrer">View Codeforces profile</a>
+        <p class="leetcode-updated" id="codeforces-updated" aria-live="polite"></p>
+      </div>
     </div>
   </section>
 

@@ -12,29 +12,6 @@ if (lastEditedEl) {
   lastEditedEl.textContent = `Last edited: ${formattedDate}`;
 }
 
-const navToggle = document.querySelector('.nav-toggle');
-const navMenu = document.querySelector('.nav-menu');
-
-if (navToggle && navMenu) {
-  const navLinks = navMenu.querySelectorAll('a[href^="#"]');
-
-  const updateNavState = (isOpen) => {
-    navMenu.classList.toggle('active', isOpen);
-    navToggle.classList.toggle('active', isOpen);
-    navToggle.setAttribute('aria-expanded', String(isOpen));
-  };
-
-  navToggle.addEventListener('click', () => {
-    updateNavState(!navMenu.classList.contains('active'));
-  });
-
-  navLinks.forEach((link) => {
-    link.addEventListener('click', () => {
-      updateNavState(false);
-    });
-  });
-}
-
 // ── Contact form → Web3Forms (works on every page) ───────────────────────
 document.querySelectorAll('#contact-form').forEach((contactForm) => {
   const feedback = contactForm.querySelector('.contact-feedback');
@@ -101,28 +78,16 @@ async function loadLeetCodeStats() {
     if (stats.profileUrl) profileEl.href = stats.profileUrl;
     else profileEl.hidden = true;
 
+    const contestsEl = document.getElementById('leetcode-contests');
+    contestsEl.textContent = Number(stats.contestsGiven ?? 0).toLocaleString();
+
     const ratingEl = document.getElementById('leetcode-rating');
-    ratingEl.textContent = Number.isFinite(stats.rating) ? Math.round(stats.rating).toLocaleString() : '—';
+    ratingEl.textContent = Number.isFinite(stats.highestRating) ? Math.round(stats.highestRating).toLocaleString() : '—';
 
     const rankingEl = document.getElementById('leetcode-ranking');
     rankingEl.textContent = Number.isFinite(stats.ranking)
       ? `Global rank ${stats.ranking.toLocaleString()}`
       : 'Global ranking unavailable';
-
-    const recentEl = document.getElementById('leetcode-recent');
-    recentEl.replaceChildren();
-    const recent = (stats.recentAccepted ?? []).slice(0, 5);
-    if (recent.length) {
-      recent.forEach((submission) => {
-        const item = document.createElement('li');
-        item.textContent = submission.title;
-        recentEl.append(item);
-      });
-    } else {
-      const item = document.createElement('li');
-      item.textContent = 'No recent accepted submissions';
-      recentEl.append(item);
-    }
 
     const topicsEl = document.getElementById('leetcode-topics');
     topicsEl.replaceChildren();
@@ -149,26 +114,65 @@ async function loadLeetCodeStats() {
   } catch (error) {
     console.warn('Could not load LeetCode stats:', error);
     totalEl.textContent = 'Unavailable';
-    document.getElementById('leetcode-recent').textContent = 'Stats are temporarily unavailable.';
+    document.getElementById('leetcode-contests').textContent = 'Unavailable';
+    document.getElementById('leetcode-rating').textContent = 'Unavailable';
   }
 }
 
 loadLeetCodeStats();
 
-window.addEventListener('DOMContentLoaded', () => {
-  const logoVideos = document.querySelectorAll('.brand-video');
+async function loadCodeforcesStats() {
+  const ratingEl = document.getElementById('codeforces-rating');
+  if (!ratingEl) return;
 
-  logoVideos.forEach((video) => {
-    video.muted = true;
-    video.playsInline = true;
-    video.loop = true;
-    video.autoplay = true;
+  try {
+    const response = await fetch('./data/codeforces.json', { cache: 'no-store' });
+    if (!response.ok) throw new Error(`Codeforces stats request failed with HTTP ${response.status}`);
 
-    const playPromise = video.play();
-    if (playPromise !== undefined) {
-      playPromise.catch((error) => {
-        console.warn('Logo video failed to autoplay:', error);
+    const stats = await response.json();
+    ratingEl.textContent = Number.isFinite(stats.rating) ? Math.round(stats.rating).toLocaleString() : '—';
+    document.getElementById('codeforces-rank').textContent = stats.rank
+      ? `${stats.rank} · Max ${stats.maxRank ?? 'unavailable'} (${stats.maxRating ?? '—'})`
+      : 'Rank unavailable';
+    document.getElementById('codeforces-solved').textContent = Number(stats.problemsSolved ?? 0).toLocaleString();
+    document.getElementById('codeforces-submissions').textContent = `${Number(stats.acceptedSubmissions ?? 0).toLocaleString()} accepted · ${stats.acceptanceRate ?? 0}% acceptance`;
+    document.getElementById('codeforces-contests').textContent = Number(stats.contestsGiven ?? 0).toLocaleString();
+    document.getElementById('codeforces-best-rank').textContent = stats.bestContestRank
+      ? `Best rank ${stats.bestContestRank.toLocaleString()}`
+      : 'Best rank unavailable';
+    document.getElementById('codeforces-performance').textContent = `Highest rating ${stats.maxRating ?? '—'} · Average contest rank ${stats.averageContestRank?.toLocaleString() ?? '—'} · Rating change ${stats.ratingChange >= 0 ? '+' : ''}${stats.ratingChange ?? 0}`;
+
+    const renderList = (elementId, values, label) => {
+      const list = document.getElementById(elementId);
+      list.replaceChildren();
+      if (!values?.length) {
+        const item = document.createElement('li');
+        item.textContent = `${label} unavailable`;
+        list.append(item);
+        return;
+      }
+      values.forEach((entry) => {
+        const item = document.createElement('li');
+        item.textContent = `${entry.name}: ${entry.solved ?? entry.submissions}`;
+        list.append(item);
       });
+    };
+
+    renderList('codeforces-tags', stats.topTags, 'Tags');
+    document.getElementById('codeforces-performance').textContent += ` · Active ${stats.activeDays ?? 0} days · Current streak ${stats.currentStreak ?? 0} days · Longest streak ${stats.longestStreak ?? 0} days`;
+
+    if (stats.updatedAt) {
+      const updatedAt = new Date(stats.updatedAt);
+      if (!Number.isNaN(updatedAt.getTime())) {
+        document.getElementById('codeforces-updated').textContent = `Updated ${updatedAt.toLocaleString()}`;
+      }
     }
-  });
-});
+  } catch (error) {
+    console.warn('Could not load Codeforces stats:', error);
+    ratingEl.textContent = 'Unavailable';
+    document.getElementById('codeforces-solved').textContent = 'Unavailable';
+    document.getElementById('codeforces-contests').textContent = 'Unavailable';
+  }
+}
+
+loadCodeforcesStats();
