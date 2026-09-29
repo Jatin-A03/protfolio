@@ -140,7 +140,17 @@ async function loadCodeforcesStats() {
     document.getElementById('codeforces-best-rank').textContent = stats.bestContestRank
       ? `Best rank ${stats.bestContestRank.toLocaleString()}`
       : 'Best rank unavailable';
-    document.getElementById('codeforces-performance').textContent = `Highest rating ${stats.maxRating ?? '—'} · Average contest rank ${stats.averageContestRank?.toLocaleString() ?? '—'} · Rating change ${stats.ratingChange >= 0 ? '+' : ''}${stats.ratingChange ?? 0}`;
+    document.getElementById('codeforces-max-rating').textContent = Number.isFinite(stats.maxRating)
+      ? Math.round(stats.maxRating).toLocaleString()
+      : '—';
+    document.getElementById('codeforces-average-rank').textContent = Number.isFinite(stats.averageContestRank)
+      ? stats.averageContestRank.toLocaleString()
+      : '—';
+    const ratingChange = Number(stats.ratingChange ?? 0);
+    document.getElementById('codeforces-rating-change').textContent = `${ratingChange >= 0 ? '+' : ''}${ratingChange.toLocaleString()}`;
+    document.getElementById('codeforces-active-days').textContent = `${Number(stats.activeDays ?? 0).toLocaleString()} days`;
+    document.getElementById('codeforces-current-streak').textContent = `${Number(stats.currentStreak ?? 0).toLocaleString()} days`;
+    document.getElementById('codeforces-longest-streak').textContent = `${Number(stats.longestStreak ?? 0).toLocaleString()} days`;
 
     const renderList = (elementId, values, label) => {
       const list = document.getElementById(elementId);
@@ -159,8 +169,41 @@ async function loadCodeforcesStats() {
     };
 
     renderList('codeforces-tags', stats.topTags, 'Tags');
-    document.getElementById('codeforces-performance').textContent += ` · Active ${stats.activeDays ?? 0} days · Current streak ${stats.currentStreak ?? 0} days · Longest streak ${stats.longestStreak ?? 0} days`;
+    const ratingList = document.getElementById('codeforces-solved-by-rating');
+    ratingList.replaceChildren();
+    const ratingBuckets = Object.entries(stats.solvedByRating ?? {})
+      .map(([rating, solved]) => [Number(rating), Number(solved)])
+      .filter(([rating, solved]) => Number.isFinite(rating) && Number.isFinite(solved) && solved >= 0)
+      .sort(([left], [right]) => left - right);
+    const largestBucket = Math.max(0, ...ratingBuckets.map(([, solved]) => solved));
+    if (ratingBuckets.length) {
+      ratingBuckets.forEach(([rating, solved]) => {
+        const item = document.createElement('li');
+        const label = document.createElement('span');
+        label.className = 'rating-bucket-label';
+        label.textContent = rating.toLocaleString();
 
+        const track = document.createElement('span');
+        track.className = 'rating-bucket-track';
+        track.setAttribute('aria-hidden', 'true');
+        const bar = document.createElement('span');
+        bar.className = 'rating-bucket-bar';
+        bar.style.width = `${largestBucket ? (solved / largestBucket) * 100 : 0}%`;
+        track.append(bar);
+
+        const count = document.createElement('span');
+        count.className = 'rating-bucket-count';
+        count.textContent = solved.toLocaleString();
+
+        item.setAttribute('aria-label', `Rating ${rating}: ${solved} solved`);
+        item.append(label, track, count);
+        ratingList.append(item);
+      });
+    } else {
+      const item = document.createElement('li');
+      item.textContent = 'Rating distribution unavailable';
+      ratingList.append(item);
+    }
     if (stats.updatedAt) {
       const updatedAt = new Date(stats.updatedAt);
       if (!Number.isNaN(updatedAt.getTime())) {

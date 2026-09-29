@@ -299,12 +299,25 @@
         <div class="codeforces-details">
           <div>
             <h4>Performance</h4>
-            <p id="codeforces-performance">Loading Codeforces performance...</p>
+            <dl class="codeforces-performance" id="codeforces-performance" aria-live="polite">
+              <div><dt>Max rating</dt><dd id="codeforces-max-rating">—</dd></div>
+              <div><dt>Average contest rank</dt><dd id="codeforces-average-rank">—</dd></div>
+              <div><dt>Latest rating change</dt><dd id="codeforces-rating-change">—</dd></div>
+              <div><dt>Active days</dt><dd id="codeforces-active-days">—</dd></div>
+              <div><dt>Current streak</dt><dd id="codeforces-current-streak">—</dd></div>
+              <div><dt>Longest streak</dt><dd id="codeforces-longest-streak">—</dd></div>
+            </dl>
           </div>
           <div>
             <h4>Top Tags</h4>
             <ul class="codeforces-list" id="codeforces-tags"><li>Loading...</li></ul>
           </div>
+        </div>
+        <div class="codeforces-rating-wrap">
+          <h4>Problems solved by rating</h4>
+          <ul class="codeforces-rating-list" id="codeforces-solved-by-rating" aria-live="polite">
+            <li>Loading rating distribution...</li>
+          </ul>
         </div>
         <a class="profile-link" id="codeforces-profile" href="https://codeforces.com/profile/A_Jatin" target="_blank" rel="noopener noreferrer">View Codeforces profile</a>
         <p class="leetcode-updated" id="codeforces-updated" aria-live="polite"></p>
