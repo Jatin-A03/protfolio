@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-09-29T16:21:55.810Z",
+  "updatedAt": "2026-09-30T17:59:59.361Z",
   "username": "A_Jatin",
-  "ranking": 555731,
+  "ranking": 553428,
   "contestsGiven": 19,
   "highestRating": 1425.811,
   "totalSolved": 283,
@@ -13,7 +13,7 @@
   "topics": [
     {
       "name": "Array",
-      "solved": 157
+      "solved": 158
     },
     {
       "name": "String",
@@ -33,7 +33,7 @@
     },
     {
       "name": "Sorting",
-      "solved": 34
+      "solved": 35
     },
     {
       "name": "Matrix",
