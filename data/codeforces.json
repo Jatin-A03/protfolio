@@ -1,26 +1,26 @@
 {
-  "updatedAt": "2026-09-30T18:07:05.871Z",
+  "updatedAt": "2026-10-01T06:29:48.649Z",
   "handle": "A_Jatin",
   "rating": null,
   "maxRating": null,
   "rank": null,
   "maxRank": null,
   "contestsGiven": 0,
-  "problemsSolved": 37,
-  "acceptedSubmissions": 38,
-  "acceptanceRate": 71.7,
+  "problemsSolved": 38,
+  "acceptedSubmissions": 39,
+  "acceptanceRate": 68.42,
   "bestContestRank": null,
   "averageContestRank": null,
   "ratingChange": 0,
   "ratingHistory": [],
   "solvedByRating": {
     "800": 30,
-    "900": 7
+    "900": 8
   },
   "topTags": [
     {
       "name": "math",
-      "solved": 20
+      "solved": 21
     },
     {
       "name": "greedy",
