@@ -1,42 +1,42 @@
 {
-  "updatedAt": "2026-10-01T18:33:47.566Z",
+  "updatedAt": "2026-10-02T06:08:31.978Z",
   "handle": "A_Jatin",
   "rating": null,
   "maxRating": null,
   "rank": null,
   "maxRank": null,
   "contestsGiven": 0,
-  "problemsSolved": 39,
-  "acceptedSubmissions": 40,
-  "acceptanceRate": 68.97,
+  "problemsSolved": 41,
+  "acceptedSubmissions": 42,
+  "acceptanceRate": 68.85,
   "bestContestRank": null,
   "averageContestRank": null,
   "ratingChange": 0,
   "ratingHistory": [],
   "solvedByRating": {
     "800": 30,
-    "900": 9
+    "900": 11
   },
   "topTags": [
     {
       "name": "math",
-      "solved": 21
+      "solved": 22
     },
     {
       "name": "greedy",
-      "solved": 13
+      "solved": 15
+    },
+    {
+      "name": "constructive algorithms",
+      "solved": 10
     },
     {
       "name": "implementation",
       "solved": 10
     },
     {
-      "name": "constructive algorithms",
-      "solved": 9
-    },
-    {
       "name": "brute force",
-      "solved": 8
+      "solved": 9
     },
     {
       "name": "number theory",
