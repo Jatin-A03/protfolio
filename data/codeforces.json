@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02T06:08:31.978Z",
+  "updatedAt": "2026-10-03T05:42:13.263Z",
   "handle": "A_Jatin",
   "rating": null,
   "maxRating": null,
@@ -60,7 +60,7 @@
     }
   ],
   "activeDays": 13,
-  "currentStreak": 2,
+  "currentStreak": 0,
   "longestStreak": 4,
   "profileUrl": "https://codeforces.com/profile/A_Jatin"
 }
