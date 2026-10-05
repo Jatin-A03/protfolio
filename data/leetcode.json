@@ -1,19 +1,19 @@
 {
-  "updatedAt": "2026-10-04T16:50:37.815Z",
+  "updatedAt": "2026-10-05T05:38:41.257Z",
   "username": "A_Jatin",
   "ranking": 526252,
   "contestsGiven": 19,
   "highestRating": 1425.811,
-  "totalSolved": 296,
+  "totalSolved": 298,
   "difficulty": {
-    "easy": 176,
-    "medium": 113,
+    "easy": 177,
+    "medium": 114,
     "hard": 7
   },
   "topics": [
     {
       "name": "Array",
-      "solved": 163
+      "solved": 165
     },
     {
       "name": "String",
@@ -40,12 +40,12 @@
       "solved": 30
     },
     {
-      "name": "Greedy",
+      "name": "Dynamic Programming",
       "solved": 25
     },
     {
-      "name": "Dynamic Programming",
-      "solved": 24
+      "name": "Greedy",
+      "solved": 25
     },
     {
       "name": "Bit Manipulation",
