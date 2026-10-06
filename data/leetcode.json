@@ -1,23 +1,23 @@
 {
-  "updatedAt": "2026-10-06T06:19:24.273Z",
+  "updatedAt": "2026-10-06T18:21:18.501Z",
   "username": "A_Jatin",
-  "ranking": 509610,
+  "ranking": 502239,
   "contestsGiven": 19,
   "highestRating": 1425.811,
-  "totalSolved": 303,
+  "totalSolved": 308,
   "difficulty": {
     "easy": 181,
-    "medium": 115,
+    "medium": 120,
     "hard": 7
   },
   "topics": [
     {
       "name": "Array",
-      "solved": 169
+      "solved": 171
     },
     {
       "name": "String",
-      "solved": 71
+      "solved": 74
     },
     {
       "name": "Math",
@@ -25,7 +25,7 @@
     },
     {
       "name": "Hash Table",
-      "solved": 55
+      "solved": 56
     },
     {
       "name": "Two Pointers",
@@ -37,19 +37,19 @@
     },
     {
       "name": "Matrix",
-      "solved": 30
+      "solved": 31
+    },
+    {
+      "name": "Greedy",
+      "solved": 26
     },
     {
       "name": "Dynamic Programming",
       "solved": 25
     },
     {
-      "name": "Greedy",
+      "name": "Stack",
       "solved": 25
-    },
-    {
-      "name": "Bit Manipulation",
-      "solved": 24
     }
   ],
   "profileUrl": "https://leetcode.com/u/A_Jatin/"
