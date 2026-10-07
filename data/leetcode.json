@@ -1,19 +1,19 @@
 {
-  "updatedAt": "2026-10-06T18:21:18.501Z",
+  "updatedAt": "2026-10-07T18:56:47.323Z",
   "username": "A_Jatin",
-  "ranking": 502239,
+  "ranking": 492667,
   "contestsGiven": 19,
   "highestRating": 1425.811,
-  "totalSolved": 308,
+  "totalSolved": 312,
   "difficulty": {
     "easy": 181,
-    "medium": 120,
+    "medium": 124,
     "hard": 7
   },
   "topics": [
     {
       "name": "Array",
-      "solved": 171
+      "solved": 172
     },
     {
       "name": "String",
@@ -29,7 +29,7 @@
     },
     {
       "name": "Two Pointers",
-      "solved": 41
+      "solved": 44
     },
     {
       "name": "Sorting",
@@ -41,14 +41,14 @@
     },
     {
       "name": "Greedy",
+      "solved": 27
+    },
+    {
+      "name": "Stack",
       "solved": 26
     },
     {
       "name": "Dynamic Programming",
-      "solved": 25
-    },
-    {
-      "name": "Stack",
       "solved": 25
     }
   ],
