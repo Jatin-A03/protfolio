@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-10-07T18:56:47.323Z",
+  "updatedAt": "2026-10-08T18:50:45.341Z",
   "username": "A_Jatin",
-  "ranking": 492667,
-  "contestsGiven": 19,
+  "ranking": 483579,
+  "contestsGiven": 20,
   "highestRating": 1425.811,
-  "totalSolved": 312,
+  "totalSolved": 313,
   "difficulty": {
     "easy": 181,
-    "medium": 124,
+    "medium": 125,
     "hard": 7
   },
   "topics": [
