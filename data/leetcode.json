@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-10-12T05:56:13.624Z",
+  "updatedAt": "2026-10-12T21:16:01.176Z",
   "username": "A_Jatin",
-  "ranking": 475464,
+  "ranking": 469000,
   "contestsGiven": 20,
   "highestRating": 1425.811,
-  "totalSolved": 319,
+  "totalSolved": 320,
   "difficulty": {
-    "easy": 184,
+    "easy": 185,
     "medium": 128,
     "hard": 7
   },
@@ -21,7 +21,7 @@
     },
     {
       "name": "Math",
-      "solved": 57
+      "solved": 58
     },
     {
       "name": "Hash Table",
@@ -44,12 +44,12 @@
       "solved": 27
     },
     {
-      "name": "Stack",
+      "name": "Dynamic Programming",
       "solved": 26
     },
     {
-      "name": "Dynamic Programming",
-      "solved": 25
+      "name": "Stack",
+      "solved": 26
     }
   ],
   "profileUrl": "https://leetcode.com/u/A_Jatin/"
