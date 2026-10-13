@@ -1,27 +1,27 @@
 {
-  "updatedAt": "2026-10-13T06:46:34.348Z",
+  "updatedAt": "2026-10-13T19:16:38.857Z",
   "username": "A_Jatin",
-  "ranking": 469000,
+  "ranking": 454013,
   "contestsGiven": 20,
   "highestRating": 1425.811,
-  "totalSolved": 323,
+  "totalSolved": 327,
   "difficulty": {
     "easy": 186,
-    "medium": 130,
+    "medium": 134,
     "hard": 7
   },
   "topics": [
     {
       "name": "Array",
-      "solved": 176
+      "solved": 178
     },
     {
       "name": "String",
-      "solved": 74
+      "solved": 75
     },
     {
       "name": "Math",
-      "solved": 58
+      "solved": 59
     },
     {
       "name": "Hash Table",
@@ -36,16 +36,16 @@
       "solved": 37
     },
     {
+      "name": "Dynamic Programming",
+      "solved": 31
+    },
+    {
       "name": "Matrix",
       "solved": 31
     },
     {
       "name": "Greedy",
-      "solved": 28
-    },
-    {
-      "name": "Dynamic Programming",
-      "solved": 27
+      "solved": 29
     },
     {
       "name": "Stack",
