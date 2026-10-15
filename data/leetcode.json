@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-10-14T17:09:28.696Z",
+  "updatedAt": "2026-10-15T04:37:23.830Z",
   "username": "A_Jatin",
   "ranking": 452195,
   "contestsGiven": 20,
   "highestRating": 1425.811,
-  "totalSolved": 327,
+  "totalSolved": 328,
   "difficulty": {
     "easy": 186,
-    "medium": 134,
+    "medium": 135,
     "hard": 7
   },
   "topics": [
@@ -21,7 +21,7 @@
     },
     {
       "name": "Math",
-      "solved": 59
+      "solved": 60
     },
     {
       "name": "Hash Table",
@@ -45,7 +45,7 @@
     },
     {
       "name": "Greedy",
-      "solved": 29
+      "solved": 30
     },
     {
       "name": "Stack",
