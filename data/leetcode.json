@@ -1,19 +1,19 @@
 {
-  "updatedAt": "2026-10-15T04:37:23.830Z",
+  "updatedAt": "2026-10-15T16:59:48.243Z",
   "username": "A_Jatin",
-  "ranking": 452195,
+  "ranking": 448229,
   "contestsGiven": 20,
   "highestRating": 1425.811,
-  "totalSolved": 328,
+  "totalSolved": 329,
   "difficulty": {
-    "easy": 186,
+    "easy": 187,
     "medium": 135,
     "hard": 7
   },
   "topics": [
     {
       "name": "Array",
-      "solved": 178
+      "solved": 179
     },
     {
       "name": "String",
@@ -25,7 +25,7 @@
     },
     {
       "name": "Hash Table",
-      "solved": 56
+      "solved": 57
     },
     {
       "name": "Two Pointers",
