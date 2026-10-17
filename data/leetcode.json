@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-10-16T16:38:26.176Z",
+  "updatedAt": "2026-10-17T15:33:24.810Z",
   "username": "A_Jatin",
-  "ranking": 448480,
+  "ranking": 444438,
   "contestsGiven": 20,
   "highestRating": 1425.811,
-  "totalSolved": 329,
+  "totalSolved": 332,
   "difficulty": {
     "easy": 187,
-    "medium": 135,
+    "medium": 138,
     "hard": 7
   },
   "topics": [
@@ -17,7 +17,7 @@
     },
     {
       "name": "String",
-      "solved": 75
+      "solved": 76
     },
     {
       "name": "Math",
@@ -37,7 +37,7 @@
     },
     {
       "name": "Dynamic Programming",
-      "solved": 31
+      "solved": 33
     },
     {
       "name": "Matrix",
