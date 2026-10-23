@@ -1,22 +1,66 @@
 {
-  "updatedAt": "2026-10-22T17:36:05.723Z",
+  "updatedAt": "2026-10-23T05:18:26.646Z",
   "handle": "A_Jatin",
   "rating": null,
   "maxRating": null,
   "rank": null,
   "maxRank": null,
   "contestsGiven": 0,
-  "problemsSolved": 0,
-  "acceptedSubmissions": 0,
-  "acceptanceRate": 0,
+  "problemsSolved": 41,
+  "acceptedSubmissions": 42,
+  "acceptanceRate": 68.85,
   "bestContestRank": null,
   "averageContestRank": null,
   "ratingChange": 0,
   "ratingHistory": [],
-  "solvedByRating": {},
-  "topTags": [],
-  "activeDays": 0,
+  "solvedByRating": {
+    "800": 30,
+    "900": 11
+  },
+  "topTags": [
+    {
+      "name": "math",
+      "solved": 22
+    },
+    {
+      "name": "greedy",
+      "solved": 15
+    },
+    {
+      "name": "constructive algorithms",
+      "solved": 10
+    },
+    {
+      "name": "implementation",
+      "solved": 10
+    },
+    {
+      "name": "brute force",
+      "solved": 9
+    },
+    {
+      "name": "number theory",
+      "solved": 5
+    },
+    {
+      "name": "games",
+      "solved": 3
+    },
+    {
+      "name": "strings",
+      "solved": 3
+    },
+    {
+      "name": "sortings",
+      "solved": 3
+    },
+    {
+      "name": "data structures",
+      "solved": 2
+    }
+  ],
+  "activeDays": 13,
   "currentStreak": 0,
-  "longestStreak": 0,
+  "longestStreak": 4,
   "profileUrl": "https://codeforces.com/profile/A_Jatin"
 }
