@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-10-23T17:05:49.371Z",
+  "updatedAt": "2026-10-24T15:56:17.043Z",
   "username": "A_Jatin",
-  "ranking": 431876,
+  "ranking": 430133,
   "contestsGiven": 20,
   "highestRating": 1425.811,
-  "totalSolved": 338,
+  "totalSolved": 339,
   "difficulty": {
-    "easy": 190,
+    "easy": 191,
     "medium": 141,
     "hard": 7
   },
@@ -17,11 +17,11 @@
     },
     {
       "name": "String",
-      "solved": 76
+      "solved": 77
     },
     {
       "name": "Math",
-      "solved": 60
+      "solved": 61
     },
     {
       "name": "Hash Table",
