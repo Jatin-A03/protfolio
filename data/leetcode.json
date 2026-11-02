@@ -1,19 +1,19 @@
 {
-  "updatedAt": "2026-11-01T17:55:38.606Z",
+  "updatedAt": "2026-11-02T05:59:31.497Z",
   "username": "A_Jatin",
   "ranking": 416482,
   "contestsGiven": 22,
   "highestRating": 1442,
-  "totalSolved": 348,
+  "totalSolved": 349,
   "difficulty": {
     "easy": 195,
-    "medium": 146,
+    "medium": 147,
     "hard": 7
   },
   "topics": [
     {
       "name": "Array",
-      "solved": 184
+      "solved": 185
     },
     {
       "name": "String",
@@ -21,7 +21,7 @@
     },
     {
       "name": "Math",
-      "solved": 62
+      "solved": 63
     },
     {
       "name": "Hash Table",
@@ -33,7 +33,7 @@
     },
     {
       "name": "Sorting",
-      "solved": 39
+      "solved": 40
     },
     {
       "name": "Dynamic Programming",
