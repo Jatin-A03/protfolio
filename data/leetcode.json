@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-11-05T19:55:59.533Z",
+  "updatedAt": "2026-11-06T19:23:20.648Z",
   "username": "A_Jatin",
-  "ranking": 411676,
-  "contestsGiven": 22,
+  "ranking": 413759,
+  "contestsGiven": 23,
   "highestRating": 1442,
   "totalSolved": 350,
   "difficulty": {
@@ -13,7 +13,7 @@
   "topics": [
     {
       "name": "Array",
-      "solved": 186
+      "solved": 187
     },
     {
       "name": "String",
@@ -25,7 +25,7 @@
     },
     {
       "name": "Hash Table",
-      "solved": 57
+      "solved": 58
     },
     {
       "name": "Two Pointers",
@@ -33,7 +33,7 @@
     },
     {
       "name": "Sorting",
-      "solved": 40
+      "solved": 41
     },
     {
       "name": "Dynamic Programming",
