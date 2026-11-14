@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T19:40:29.249Z",
+  "updatedAt": "2026-11-14T06:20:06.490Z",
   "username": "A_Jatin",
   "ranking": 409190,
   "contestsGiven": 24,
@@ -13,11 +13,11 @@
   "topics": [
     {
       "name": "Array",
-      "solved": 188
+      "solved": 189
     },
     {
       "name": "String",
-      "solved": 77
+      "solved": 78
     },
     {
       "name": "Math",
@@ -33,19 +33,19 @@
     },
     {
       "name": "Sorting",
-      "solved": 41
+      "solved": 42
     },
     {
       "name": "Dynamic Programming",
       "solved": 35
     },
     {
-      "name": "Matrix",
+      "name": "Greedy",
       "solved": 32
     },
     {
-      "name": "Greedy",
-      "solved": 31
+      "name": "Matrix",
+      "solved": 32
     },
     {
       "name": "Stack",
