@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-11-17T20:53:50.560Z",
+  "updatedAt": "2026-11-18T20:29:41.198Z",
   "username": "A_Jatin",
-  "ranking": 404342,
+  "ranking": 404497,
   "contestsGiven": 24,
   "highestRating": 1442,
-  "totalSolved": 355,
+  "totalSolved": 356,
   "difficulty": {
     "easy": 198,
-    "medium": 150,
+    "medium": 151,
     "hard": 7
   },
   "topics": [
@@ -17,7 +17,7 @@
     },
     {
       "name": "String",
-      "solved": 78
+      "solved": 79
     },
     {
       "name": "Math",
