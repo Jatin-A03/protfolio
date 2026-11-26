@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-25T21:40:15.503Z",
+  "updatedAt": "2026-11-26T21:29:46.006Z",
   "username": "A_Jatin",
-  "ranking": 403968,
+  "ranking": 404147,
   "contestsGiven": 25,
   "highestRating": 1454.1890049101983,
-  "totalSolved": 356,
+  "totalSolved": 357,
   "difficulty": {
-    "easy": 198,
+    "easy": 199,
     "medium": 151,
     "hard": 7
   },
@@ -21,7 +21,7 @@
     },
     {
       "name": "Math",
-      "solved": 64
+      "solved": 65
     },
     {
       "name": "Hash Table",
@@ -48,7 +48,7 @@
       "solved": 32
     },
     {
-      "name": "Stack",
+      "name": "Simulation",
       "solved": 26
     }
   ],
