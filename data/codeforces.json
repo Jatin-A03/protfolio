@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-11-27T21:36:47.213Z",
+  "updatedAt": "2026-11-28T08:23:37.056Z",
   "handle": "A_Jatin",
   "rating": null,
   "maxRating": null,
   "rank": null,
   "maxRank": null,
   "contestsGiven": 0,
-  "problemsSolved": 43,
-  "acceptedSubmissions": 44,
-  "acceptanceRate": 63.77,
+  "problemsSolved": 41,
+  "acceptedSubmissions": 42,
+  "acceptanceRate": 60.87,
   "bestContestRank": null,
   "averageContestRank": null,
   "ratingChange": 0,
@@ -20,7 +20,7 @@
   "topTags": [
     {
       "name": "math",
-      "solved": 23
+      "solved": 22
     },
     {
       "name": "greedy",
@@ -28,11 +28,11 @@
     },
     {
       "name": "constructive algorithms",
-      "solved": 11
+      "solved": 10
     },
     {
       "name": "implementation",
-      "solved": 11
+      "solved": 10
     },
     {
       "name": "brute force",
@@ -43,11 +43,11 @@
       "solved": 5
     },
     {
-      "name": "strings",
-      "solved": 4
+      "name": "games",
+      "solved": 3
     },
     {
-      "name": "games",
+      "name": "strings",
       "solved": 3
     },
     {
